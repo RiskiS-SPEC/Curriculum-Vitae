@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Curriculum Vitae</title>
+
+</head>
+
+<body>
+    <div class="notification" id="notification"> Ini adalah notifikasi di bagian atas halaman. </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="photo"> <img src="kiki.jpeg" alt="Your Photo">
+                <h1>RISKI S F AGUSTIN</h1>
+                <p>MAHASISWA TEKNIK INFORMATIKA</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">CONTACT</h2>
+                <div class="contact-item">
+                    <p>📱 088290602556</p>
+                    <p>📧 Rizkisandy10@gmail.com</p>
+                    <p>🏠 Komplek PIK Kopti 006/011 No. E17 Semanan, Kalideres. Jakarta Barat 11850</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">SKILLS</h2>
+                <div class="skill-item">
+                    <p>Microsoft Office</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>Public Relations</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>Teamwork</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <p>Basic Programming Website</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">LANGUAGES</h2>
+                <p>• Indonesia</p>
+                <p>• English</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">PROFILE</h2>
+                <p>Saya adalah seorang mahasiswi jurusan teknik informatika, Saya memiliki pengetahuan menggunakan
+                    Javascript, CSS, Python, MySQL, PHP, dan Maria DB. Saat ini Saya memiliki beberapa pengalaman di
+                    bidang retail. Memiliki kemampuan komunikasi yang baik, berloyalitas, berintegritas, dan dapat
+                    bekerja sama dengan tim. Saya sangat berambisi dalam dunia teknologi, serta dengan cepat beradaptasi
+                    dengan pekerjaan.</p>
+            </div>
+            <div class="section">
+                <h2 class="section-title">EDUCATION</h2>
+                <div class="education-item">
+                    <p>UNIVERSITAS ESA UNGGUL</p>
+                    <p>Teknik Informatika (2022 - 2026)</p> <br>
+                    <p>SMA PGRI CIKAMPEK</p>
+                    <p>IPA (2016)</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section-title">WORK EXPERIENCE</h2>
+                <div class="work-experience">
+                    <div class="work-title">Inside Sales Representative</div>
+                    <div class="work-date">Synnex Metrodata Indonesia (2022 - PRESENT)</div>
+                    <ul class="work-description">
+                        <li>Memberikan Penawaran ke Partner</li>
+                        <li>Menjalankan proses Bisnis dalam pesanan partner</li>
+                        <li>Menjaga hubungan baik antara Distributor dan Partner</li>
+                        <li>Reporting penjualan dalam mingguan</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <div class="work-experience">
+                        <div class="work-title">Captain Oprasional</div>
+                        <div class="work-date">Boga Makmur Dynasty (2019 - 2022)</div>
+                        <ul class="work-description">
+                            <li>Melayani Customer dari awal datang sampai customer pulang</li>
+                            <li>Melakukan stock opname bulanan</li>
+                            <li>Menghandle marketplace (Tokopedia,Shopee)</li>
+                            <li>Sebagai trainer untuk karyawan baru di outlet</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="work-experience">
+                        <div class="work-title">Marketing & Casheer</div>
+                        <div class="work-date">Gold's Gym (2017-2019)</div>
+                        <ul class="work-description">
+                            <li>Menawarkan beberapa product susu suplement</li>
+                            <li>Melakukan stock opname bulanan</li>
+                            <li>Menghandle pembayaran</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer>
+                    <button id="portfolio-btn">My Portfolio</button>
+                </footer>
+
+            </div>
+        </div>
+
+        <footer>
+            <a id="download-btn" href="CV-RISKI SANDI.pdf">Download CV</a>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const workItems = document.querySelectorAll(".work-experience");
+                workItems.forEach((item) => {
+                    item.addEventListener("mouseover", function () {
+                        this.style.backgroundColor = "#f8f9fa";
+                    });
+                    item.addEventListener("mouseout", function () {
+                        this.style.backgroundColor = "transparent";
+                    });
+                });
+            });
+        </script>
+</body>
+
+</html>

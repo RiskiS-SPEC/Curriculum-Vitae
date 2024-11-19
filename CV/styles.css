@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px 0;
+}
+
+.progress {
+    background-color: #007bff;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.photo h1 {
+    font-size: 20px;
+    /* Ukuran font yang lebih kecil */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+.photo img {
+    width: 200px;
+    /* Sesuaikan ukuran foto */
+    height: 200px;
+    /* Sesuaikan ukuran foto */
+    border-radius: 50%;
+    /* Membuat foto menjadi bulat */
+    margin: 30px;
+    /* Jarak dari tepi */
+    display: block;
+}
+
+.photo-container {
+    display: flex;
+    align-items: center;
+    /* Vertikal sejajar */
+    gap: 15px;
+    /* Jarak antara foto dan teks */
+    margin-bottom: 20px;
+    /* Jarak dari elemen di bawahnya */
+}
+
+.photo-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* Membuat gambar bulat */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.photo-container .text {
+    text-align: left;
+    /* Menjaga teks tetap rata kiri */
+    color: #fff;
+    /* Agar tetap kontras di sidebar biru */
+}
+
+.photo-container .text h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.photo-container .text p {
+    font-size: 16px;
+    margin: 5px 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .photo-container {
+        flex-direction: column;
+        /* Susunan berubah ke vertikal di layar kecil */
+        align-items: center;
+        /* Pusatkan elemen */
+    }
+}
+
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    background-color: #fff;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+}
+
+.skill-item {
+    margin-bottom: 8px;
+}
+
+.work-experience {
+    margin-bottom: 20px;
+}
+
+.work-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.work-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.work-description {
+    margin-bottom: 10px;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px 0;
+}
+
+.progress {
+    background-color: #007bff;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.photo h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#download-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin: 20px;
+    /* Menambahkan margin untuk menjaga jarak dengan tombol lain */
+}
+
+#download-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px 0;
+}
+
+.progress {
+    background-color: #007bff;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.photo h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#download-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin: 20px;
+    /* Menambahkan margin untuk menjaga jarak dengan tombol lain */
+}
+
+#download-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#portfolio-btn {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    position: fixed;
+    margin-right: 50px;
+}
+
+#portfolio-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
